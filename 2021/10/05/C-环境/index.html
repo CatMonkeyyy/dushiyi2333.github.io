@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>月明星稀 - Amnesia</title>
+    <title>C语言——基于Vscode开发环境搭建 - Amnesia</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,22 +13,34 @@
     
 
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dushiyi2333/dushiyi2333.github.io@main/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="道德是一种自律，而不是他律。">
+    <meta name="description" content="要在VSCode中配置C语言环境，我们首先可能要一个VSCode（废话），所以先下载安装一个VSCode；然后肯定需要相关插件，因为VSCode不能直接拿来写C；然后任何语言的程序在运行前都需要编译，那还需要一个编译器，很可惜VSCode插件里面不自带，所以要自己下载然后配置；最后在VSCode中进行相关配置，就可以啦 1. VsCode（system版） VsCode     vscode插件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="月明星稀">
-<meta property="og:url" content="http://example.com/2021/10/03/hello-world/index.html">
+<meta property="og:title" content="C语言——基于Vscode开发环境搭建">
+<meta property="og:url" content="http://example.com/2021/10/05/C-%E7%8E%AF%E5%A2%83/index.html">
 <meta property="og:site_name" content="Amnesia">
-<meta property="og:description" content="道德是一种自律，而不是他律。">
+<meta property="og:description" content="要在VSCode中配置C语言环境，我们首先可能要一个VSCode（废话），所以先下载安装一个VSCode；然后肯定需要相关插件，因为VSCode不能直接拿来写C；然后任何语言的程序在运行前都需要编译，那还需要一个编译器，很可惜VSCode插件里面不自带，所以要自己下载然后配置；最后在VSCode中进行相关配置，就可以啦 1. VsCode（system版） VsCode     vscode插件">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-03T15:02:38.222Z">
-<meta property="article:modified_time" content="2021-10-05T15:37:24.198Z">
+<meta property="og:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
+<meta property="og:image" content="https://i.loli.net/2021/10/08/qpT8AyOGsVf7D1e.png
+ ">
+<meta property="og:image" content="https://i.loli.net/2021/10/08/wsDGQg2RPrdpEJK.png
+ ">
+<meta property="og:image" content="https://i.loli.net/2021/10/08/x5PZNd7HBDWchq3.png
+ ">
+<meta property="og:image" content="https://i.loli.net/2021/10/08/CFxfyDAakhPtiQV.png
+ ">
+<meta property="article:published_time" content="2021-10-05T14:44:58.444Z">
+<meta property="article:modified_time" content="2021-10-09T06:14:19.502Z">
 <meta property="article:author" content="Amnesia">
+<meta property="article:tag" content="C语言">
+<meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1633768767995">
+    <link rel="stylesheet" href="/css/style.css?v=1633768767978">
      
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1633768767995">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1633768767978">
     
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -144,20 +156,48 @@
   <article>
       
           <div class="nexmoe-post-cover" style="padding-bottom: 62.5%;"> 
-              <img data-src="https://i.loli.net/2021/10/05/1nZlY6pvrMH2EK3.jpg" data-sizes="auto" alt="月明星稀" class="lazyload">
-              <h1>月明星稀</h1>
+              <img data-src="https://i.loli.net/2021/10/08/pOgveborFJtuUMC.jpg" data-sizes="auto" alt="C语言——基于Vscode开发环境搭建" class="lazyload">
+              <h1>C语言——基于Vscode开发环境搭建</h1>
           </div>
       
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月03日</a>
-    <a><i class="nexmoefont icon-areachart"></i>12 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月05日</a>
+    <a><i class="nexmoefont icon-areachart"></i>491 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
       
 
-      <p>道德是一种自律，而不是他律。</p>
+      <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>要在VSCode中配置C语言环境，我们首先可能要一个VSCode（废话），所以先下载安装一个VSCode；然后肯定需要相关插件，因为VSCode不能直接拿来写C；然后任何语言的程序在运行前都需要编译，那还需要一个编译器，很可惜VSCode插件里面不自带，所以要自己下载然后配置；最后在VSCode中进行相关配置，就可以啦</p>
+<h2 id="1-VsCode（system版）"><a href="#1-VsCode（system版）" class="headerlink" title="1. VsCode（system版）"></a>1. VsCode（system版）</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/#alt-downloads">VsCode</a></li>
+</ul>
+ <img src="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png" width="60%">
+
+<h5 id="vscode插件"><a href="#vscode插件" class="headerlink" title="vscode插件"></a>vscode插件</h5><ul>
+<li>Chinese（simplifled）Language Pack ——官方汉化包</li>
+<li>C/C++ （编辑器）</li>
+</ul>
+<h2 id="2-MinGW"><a href="#2-MinGW" class="headerlink" title="2.MinGW"></a>2.MinGW</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">MinGW</a></li>
+</ul>
+<p>下载完成后解压到你指定的文件夹：<br> <img src="https://i.loli.net/2021/10/08/qpT8AyOGsVf7D1e.png
+ " width="60%"></p>
+<p>然后配置环境变量</p>
+<p>找到这个文件夹内的一个叫<code>bin</code>的文件夹：</p>
+<p>然后把它的地址复制一下，找到此电脑（或者我的电脑）——&gt;右键——&gt;属性</p>
+<p>然后进入到下面这个页面，打开高级系统设置：</p>
+<p>在弹出的页面中选择“高级”分页，找到环境变量，单击打开：</p>
+<p>然后在环境变量中的系统变量中，找到Path变量：</p>
+<p>打开之后将刚刚复制的地址添加进去：<br> <img src="https://i.loli.net/2021/10/08/wsDGQg2RPrdpEJK.png
+ " width="60%"></p>
+<p>然后测试环境配置是否成功：<br>crtl+R快捷键打开运行窗口，在里面输入cmd，回车打开cmd.exe<br>在cmd.exe中输入如下命令：<br><code>gcc -v -E -x c++ -</code><br>如果运行结果像下方图片中这样，就配置成功了:<br><img src="https://i.loli.net/2021/10/08/x5PZNd7HBDWchq3.png
+ " width="60%"></p>
+<h2 id="3-工程搭建"><a href="#3-工程搭建" class="headerlink" title="3.工程搭建"></a>3.工程搭建</h2><p>先新建一个文件夹作为C语言项目文件，然后点击菜单栏中的文件——&gt;打开文件夹，找到刚才新建的文件夹，然后点击选择文件夹打开这个项目文件。在里面新建一个text.c文件（名字随便起，以.c结尾就行了），然后再建一个.vscode文件夹（注意前面有个点）。<br>c文件里面写入万恶之源”hello world”:<br><img src="https://i.loli.net/2021/10/08/CFxfyDAakhPtiQV.png
+ " width="60%"><br>打开终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc text.c </span><br><span class="line">./a.exe</span><br></pre></td></tr></table></figure>
+<p>运行成功，走你！</p>
 
   </article>
 
@@ -168,6 +208,8 @@
   
   <div class="nexmoe-post-meta nexmoe-rainbow">
     
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/vscode/" rel="tag">vscode</a>
     
 </div>
 
@@ -195,6 +237,13 @@
                       
                         
                           
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-VsCode%EF%BC%88system%E7%89%88%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1. VsCode（system版）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#vscode%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">vscode插件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-MinGW"><span class="toc-number">1.2.</span> <span class="toc-text">2.MinGW</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA"><span class="toc-number">1.3.</span> <span class="toc-text">3.工程搭建</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
                           
                           
                       
@@ -224,10 +273,10 @@
 
  
 
-<script async src="/js/app.js?v=1633768767995"></script>
+<script async src="/js/app.js?v=1633768767982"></script>
 
 
-	<script async src="/js/search.js?v=1633768767996"></script>
+	<script async src="/js/search.js?v=1633768767982"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
