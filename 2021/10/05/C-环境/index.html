@@ -21,26 +21,28 @@
 <meta property="og:description" content="要在VSCode中配置C语言环境，我们首先可能要一个VSCode（废话），所以先下载安装一个VSCode；然后肯定需要相关插件，因为VSCode不能直接拿来写C；然后任何语言的程序在运行前都需要编译，那还需要一个编译器，很可惜VSCode插件里面不自带，所以要自己下载然后配置；最后在VSCode中进行相关配置，就可以啦 1. VsCode（system版） VsCode     vscode插件">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/30/kcFaP8ALGvTEbtY.png">
 <meta property="og:image" content="https://i.loli.net/2021/10/08/qpT8AyOGsVf7D1e.png
  ">
 <meta property="og:image" content="https://i.loli.net/2021/10/08/wsDGQg2RPrdpEJK.png
  ">
 <meta property="og:image" content="https://i.loli.net/2021/10/08/x5PZNd7HBDWchq3.png
  ">
+<meta property="og:image" content="https://i.loli.net/2021/11/30/Wv1liCHLeongAMd.png">
 <meta property="og:image" content="https://i.loli.net/2021/10/08/CFxfyDAakhPtiQV.png
  ">
 <meta property="article:published_time" content="2021-10-05T14:44:58.444Z">
-<meta property="article:modified_time" content="2021-10-09T06:14:19.502Z">
+<meta property="article:modified_time" content="2021-11-30T06:30:58.849Z">
 <meta property="article:author" content="Amnesia">
 <meta property="article:tag" content="C语言">
 <meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1634206737983">
+    <link rel="stylesheet" href="/css/style.css?v=1638258636046">
      
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1634206737983">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638258636046">
     
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -65,8 +67,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>11</div>
-        <div><span>标签</span>4</div>
+        <div><span>文章</span>12</div>
+        <div><span>标签</span>5</div>
         <div><span>分类</span>0</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -134,7 +136,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 15px;">C语言</a> <a href="/tags/mpvue/" style="font-size: 10px;">mpvue</a> <a href="/tags/vscode/" style="font-size: 20px;">vscode</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 10px;">微信小程序</a>
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 20px;">C语言</a> <a href="/tags/mpvue/" style="font-size: 10px;">mpvue</a> <a href="/tags/vscode/" style="font-size: 20px;">vscode</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 10px;">微信小程序</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;">算法</a>
     </div>
     
   </div>
@@ -163,7 +165,7 @@
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月05日</a>
-    <a><i class="nexmoefont icon-areachart"></i>491 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>565 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
@@ -182,7 +184,8 @@
 <h2 id="2-MinGW"><a href="#2-MinGW" class="headerlink" title="2.MinGW"></a>2.MinGW</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">MinGW</a></li>
 </ul>
-<p>下载完成后解压到你指定的文件夹：<br> <img src="https://i.loli.net/2021/10/08/qpT8AyOGsVf7D1e.png
+<p>打开链接下滑找到这个界面：<br><img src="https://i.loli.net/2021/11/30/kcFaP8ALGvTEbtY.png" width="60%"><br>64位下载黄色覆盖区选项（sjlj和seh关系到安全选项，任选一个下载即可）</p>
+<p>下载完成后解压到你指定的文件夹（这里我是解压到C盘根目录下）：<br> <img src="https://i.loli.net/2021/10/08/qpT8AyOGsVf7D1e.png
  " width="60%"></p>
 <p>然后配置环境变量</p>
 <p>找到这个文件夹内的一个叫<code>bin</code>的文件夹：</p>
@@ -192,12 +195,13 @@
 <p>然后在环境变量中的系统变量中，找到Path变量：</p>
 <p>打开之后将刚刚复制的地址添加进去：<br> <img src="https://i.loli.net/2021/10/08/wsDGQg2RPrdpEJK.png
  " width="60%"></p>
-<p>然后测试环境配置是否成功：<br>crtl+R快捷键打开运行窗口，在里面输入cmd，回车打开cmd.exe<br>在cmd.exe中输入如下命令：<br><code>gcc -v -E -x c++ -</code><br>如果运行结果像下方图片中这样，就配置成功了:<br><img src="https://i.loli.net/2021/10/08/x5PZNd7HBDWchq3.png
- " width="60%"></p>
-<h2 id="3-工程搭建"><a href="#3-工程搭建" class="headerlink" title="3.工程搭建"></a>3.工程搭建</h2><p>先新建一个文件夹作为C语言项目文件，然后点击菜单栏中的文件——&gt;打开文件夹，找到刚才新建的文件夹，然后点击选择文件夹打开这个项目文件。在里面新建一个text.c文件（名字随便起，以.c结尾就行了），然后再建一个.vscode文件夹（注意前面有个点）。<br>c文件里面写入万恶之源”hello world”:<br><img src="https://i.loli.net/2021/10/08/CFxfyDAakhPtiQV.png
- " width="60%"><br>打开终端输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc text.c </span><br><span class="line">./a.exe</span><br></pre></td></tr></table></figure>
-<p>运行成功，走你！</p>
+<p>然后测试环境配置是否成功：<br>WIN+R快捷键打开运行窗口，输入cmd，回车打开cmd.exe<br>在cmd.exe窗口中输入如下命令：<br><code>gcc -v -E -x c++ -</code><br>如果运行结果像下方图片中这样，就配置成功了:<br><img src="https://i.loli.net/2021/10/08/x5PZNd7HBDWchq3.png
+ " width="100%"></p>
+<h2 id="3-工程搭建"><a href="#3-工程搭建" class="headerlink" title="3.工程搭建"></a>3.工程搭建</h2><p>新建一个文件夹作为C语言项目文件，然后打开vscode点击菜单栏中的文件——&gt;打开文件夹（一定要是打开文件夹，不是打开文件！！！），找到新建的文件夹选择并打开。在里面新建一个text.c文件（名字随便起，以.c结尾就行了）。<br>c文件里面写入万恶之源”hello world”:</p>
+<p>点击菜单栏的终端选项（Terminal），点击运行任务（RUN TASK）并在搜索框中输入gcc，双击选择gcc编译器。<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://i.loli.net/2021/11/30/Wv1liCHLeongAMd.png" alt="gcc.png" class="lazyload"><br>打开终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc text.c  </span><br><span class="line">./a.exe</span><br></pre></td></tr></table></figure>
+<p> <img src="https://i.loli.net/2021/10/08/CFxfyDAakhPtiQV.png
+ " width="60%"><br>运行成功，走你！</p>
 
   </article>
 
@@ -273,10 +277,10 @@
 
  
 
-<script async src="/js/app.js?v=1634206737985"></script>
+<script async src="/js/app.js?v=1638258636046"></script>
 
 
-	<script async src="/js/search.js?v=1634206737985"></script>
+	<script async src="/js/search.js?v=1638258636046"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
