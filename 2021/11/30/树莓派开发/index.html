@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>月明星稀 - Amnesia</title>
+    <title>基于树莓派开发Linux(一) - Amnesia</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,22 +13,27 @@
     
 
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dushiyi2333/dushiyi2333.github.io@main/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="道德是一种自律，而不是他律。">
+    <meta name="description" content="好久没有写博客了，这段时间也是在学习Linux，有一说一比win简洁多了，可操作性也高这段时间也是接触过很多Linux操作系统，比如Ubuntu，kali，raspberry，小白建议直接拿树莓派学习Linux，本文就来详细展示我是如何学习树莓派开发的。 树莓派刷机 树莓派刷机用到的工具链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1nBrHmCN9Cu6z3ED8HR3y-Q提取码：DS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="月明星稀">
-<meta property="og:url" content="http://example.com/2021/10/03/hello-world/index.html">
+<meta property="og:title" content="基于树莓派开发Linux(一)">
+<meta property="og:url" content="http://example.com/2021/11/30/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91/index.html">
 <meta property="og:site_name" content="Amnesia">
-<meta property="og:description" content="道德是一种自律，而不是他律。">
+<meta property="og:description" content="好久没有写博客了，这段时间也是在学习Linux，有一说一比win简洁多了，可操作性也高这段时间也是接触过很多Linux操作系统，比如Ubuntu，kali，raspberry，小白建议直接拿树莓派学习Linux，本文就来详细展示我是如何学习树莓派开发的。 树莓派刷机 树莓派刷机用到的工具链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1nBrHmCN9Cu6z3ED8HR3y-Q提取码：DS">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-03T15:02:38.222Z">
-<meta property="article:modified_time" content="2021-10-05T15:37:24.198Z">
+<meta property="og:image" content="https://i.loli.net/2021/11/30/Y6dODaflLZQ29hv.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/30/nOkD5NiPuRX8jqC.png">
+<meta property="article:published_time" content="2021-11-30T08:27:20.810Z">
+<meta property="article:modified_time" content="2021-11-30T10:51:07.768Z">
 <meta property="article:author" content="Amnesia">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="树莓派">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/11/30/Y6dODaflLZQ29hv.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1638269890830">
+    <link rel="stylesheet" href="/css/style.css?v=1638269890700">
      
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638269890830">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638269890700">
     
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -143,21 +148,33 @@
 
   <article>
       
-          <div class="nexmoe-post-cover" style="padding-bottom: 62.5%;"> 
-              <img data-src="https://i.loli.net/2021/10/05/1nZlY6pvrMH2EK3.jpg" data-sizes="auto" alt="月明星稀" class="lazyload">
-              <h1>月明星稀</h1>
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-src="https://acg.toubiec.cn/random.php" data-sizes="auto" alt="基于树莓派开发Linux(一)" class="lazyload">
+              <h1>基于树莓派开发Linux(一)</h1>
           </div>
       
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月03日</a>
-    <a><i class="nexmoefont icon-areachart"></i>12 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月30日</a>
+    <a><i class="nexmoefont icon-areachart"></i>462 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
       
 
-      <p>道德是一种自律，而不是他律。</p>
+      <p>好久没有写博客了，这段时间也是在学习Linux，有一说一比win简洁多了，可操作性也高这段时间也是接触过很多Linux操作系统，比如Ubuntu，kali，raspberry，小白建议直接拿树莓派学习Linux，本文就来详细展示我是如何学习树莓派开发的。</p>
+<h2 id="树莓派刷机"><a href="#树莓派刷机" class="headerlink" title="树莓派刷机"></a>树莓派刷机</h2><ul>
+<li>树莓派刷机用到的工具<br>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1nBrHmCN9Cu6z3ED8HR3y-Q">https://pan.baidu.com/s/1nBrHmCN9Cu6z3ED8HR3y-Q</a><br>提取码：DSYY </li>
+<li><a target="_blank" rel="noopener" href="https://www.raspberrypi.com/software/operating-systems/">下载镜像</a><br>(建议带桌面的树莓派操作系统种子拿迅雷下载，快的嘎嘎飞！)<img src="https://i.loli.net/2021/11/30/Y6dODaflLZQ29hv.png" width="60%"></li>
+</ul>
+<p>先用SDFormatter软件把TF卡格式化，再用win32diskimager把下载到的镜像刻录到TF卡上。（不要用U盘！TF卡至少16GB）</p>
+<h2 id="树莓派登录"><a href="#树莓派登录" class="headerlink" title="树莓派登录"></a>树莓派登录</h2><h3 id="串口"><a href="#串口" class="headerlink" title="串口"></a>串口</h3><h4 id="修改系统配置，启用串口登录树莓派"><a href="#修改系统配置，启用串口登录树莓派" class="headerlink" title="修改系统配置，启用串口登录树莓派"></a>修改系统配置，启用串口登录树莓派</h4><p>默认情况，树莓派的串口和蓝牙连接。想办法断开蓝牙连接，把串口用来数据通信。<br>打开SD卡根目录的”config.txt”文件，将以下内容添加在最后并且保存。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dtoverlay=pi3-miniuart-bt</span><br></pre></td></tr></table></figure>
+<p>这样就停止了蓝牙，解除了对串口的占用。<br>然后再修改根目录的”cmdline.txt”，将里面的内容全部替换成以下内容，以防万一，请先备份好这个文件的原内容。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dwc_otg.lpm_enable=<span class="number">0</span> console=tty1 console=serial0,<span class="number">115200</span> root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait</span><br></pre></td></tr></table></figure>
+<p>配置修改完成。</p>
+<h4 id="启动树莓，用SecureCRT连接并登录"><a href="#启动树莓，用SecureCRT连接并登录" class="headerlink" title="启动树莓，用SecureCRT连接并登录"></a>启动树莓，用SecureCRT连接并登录</h4><p>1.准备好上面的步骤之后，将SD卡插入树莓派，将USB-TTL模块的RX，TX连接树莓派并接入电脑，。</p>
+<p>2.启动SecureCRT软件<br>下载网址：<a target="_blank" rel="noopener" href="https://www.vandyke.com/download/index.html">https://www.vandyke.com/download/index.html</a><br>点击任务栏下的小闪电，选择协议为Serial，端口会自动识别，波特率115200，连接！<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://i.loli.net/2021/11/30/nOkD5NiPuRX8jqC.png" alt="2.png" class="lazyload"><br>此时接入树莓派的电源，观看到树莓派的启动过程。</p>
 
   </article>
 
@@ -168,6 +185,8 @@
   
   <div class="nexmoe-post-meta nexmoe-rainbow">
     
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Linux/" rel="tag">Linux</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" rel="tag">树莓派</a>
     
 </div>
 
@@ -195,6 +214,13 @@
                       
                         
                           
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%91%E8%8E%93%E6%B4%BE%E5%88%B7%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">树莓派刷机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%91%E8%8E%93%E6%B4%BE%E7%99%BB%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">树莓派登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%B2%E5%8F%A3"><span class="toc-number">2.1.</span> <span class="toc-text">串口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%EF%BC%8C%E5%90%AF%E7%94%A8%E4%B8%B2%E5%8F%A3%E7%99%BB%E5%BD%95%E6%A0%91%E8%8E%93%E6%B4%BE"><span class="toc-number">2.1.1.</span> <span class="toc-text">修改系统配置，启用串口登录树莓派</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%A0%91%E8%8E%93%EF%BC%8C%E7%94%A8SecureCRT%E8%BF%9E%E6%8E%A5%E5%B9%B6%E7%99%BB%E5%BD%95"><span class="toc-number">2.1.2.</span> <span class="toc-text">启动树莓，用SecureCRT连接并登录</span></a></li></ol></li></ol></li></ol>
+                                  </div>
+                              </button>
                           
                           
                       
@@ -224,10 +250,10 @@
 
  
 
-<script async src="/js/app.js?v=1638269890831"></script>
+<script async src="/js/app.js?v=1638269890704"></script>
 
 
-	<script async src="/js/search.js?v=1638269890831"></script>
+	<script async src="/js/search.js?v=1638269890704"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>

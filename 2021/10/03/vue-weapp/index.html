@@ -13,16 +13,16 @@
     
 
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dushiyi2333/dushiyi2333.github.io@main/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="一、环境配置1. 微信开发者工具（稳定版） 微信开发者工具 微信小程序官方文档  2. node.js node.js  PowerShell输入命令node --version和npm --version检测是否安装成功。 1234PS C:\WINDOWS\system32&gt; node --versionv16.10.0PS C:\WINDOWS\system32&gt; npm --v">
+    <meta name="description" content="环境配置微信开发者工具（稳定版） 微信开发者工具 微信小程序官方文档  node.js node.js  PowerShell输入命令node --version和npm --version检测是否安装成功。 1234PS C:\WINDOWS\system32&gt; node --versionv16.10.0PS C:\WINDOWS\system32&gt; npm --version7.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于mpvue框架搭建微信小程序">
 <meta property="og:url" content="http://example.com/2021/10/03/vue-weapp/index.html">
 <meta property="og:site_name" content="Amnesia">
-<meta property="og:description" content="一、环境配置1. 微信开发者工具（稳定版） 微信开发者工具 微信小程序官方文档  2. node.js node.js  PowerShell输入命令node --version和npm --version检测是否安装成功。 1234PS C:\WINDOWS\system32&gt; node --versionv16.10.0PS C:\WINDOWS\system32&gt; npm --v">
+<meta property="og:description" content="环境配置微信开发者工具（稳定版） 微信开发者工具 微信小程序官方文档  node.js node.js  PowerShell输入命令node --version和npm --version检测是否安装成功。 1234PS C:\WINDOWS\system32&gt; node --versionv16.10.0PS C:\WINDOWS\system32&gt; npm --version7.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
 <meta property="article:published_time" content="2021-10-03T15:02:38.225Z">
-<meta property="article:modified_time" content="2021-10-08T15:21:17.102Z">
+<meta property="article:modified_time" content="2021-11-30T08:05:03.230Z">
 <meta property="article:author" content="Amnesia">
 <meta property="article:tag" content="微信小程序">
 <meta property="article:tag" content="vscode">
@@ -30,10 +30,10 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1638258636047">
+    <link rel="stylesheet" href="/css/style.css?v=1638269890828">
      
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638258636047">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638269890828">
     
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -58,8 +58,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>12</div>
-        <div><span>标签</span>5</div>
+        <div><span>文章</span>13</div>
+        <div><span>标签</span>7</div>
         <div><span>分类</span>0</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -127,7 +127,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 20px;">C语言</a> <a href="/tags/mpvue/" style="font-size: 10px;">mpvue</a> <a href="/tags/vscode/" style="font-size: 20px;">vscode</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 10px;">微信小程序</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;">算法</a>
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 20px;">C语言</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/mpvue/" style="font-size: 10px;">mpvue</a> <a href="/tags/vscode/" style="font-size: 20px;">vscode</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 10px;">微信小程序</a> <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 10px;">树莓派</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;">算法</a>
     </div>
     
   </div>
@@ -156,23 +156,23 @@
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月03日</a>
-    <a><i class="nexmoefont icon-areachart"></i>453 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>445 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
       
 
-      <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="一、环境配置"><a href="#一、环境配置" class="headerlink" title="一、环境配置"></a>一、环境配置</h2><h3 id="1-微信开发者工具（稳定版）"><a href="#1-微信开发者工具（稳定版）" class="headerlink" title="1. 微信开发者工具（稳定版）"></a>1. 微信开发者工具（稳定版）</h3><ul>
+      <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="微信开发者工具（稳定版）"><a href="#微信开发者工具（稳定版）" class="headerlink" title="微信开发者工具（稳定版）"></a>微信开发者工具（稳定版）</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信开发者工具</a></li>
 <li><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/">微信小程序官方文档</a></li>
 </ul>
-<h3 id="2-node-js"><a href="#2-node-js" class="headerlink" title="2. node.js"></a>2. node.js</h3><ul>
+<h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">node.js</a></li>
 </ul>
 <p>PowerShell输入命令<code>node --version</code>和<code>npm --version</code>检测是否安装成功。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS C:\WINDOWS\system32&gt; node --version</span><br><span class="line">v16<span class="number">.10</span><span class="number">.0</span></span><br><span class="line">PS C:\WINDOWS\system32&gt; npm --version</span><br><span class="line"><span class="number">7.24</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="3-Vue-CLI"><a href="#3-Vue-CLI" class="headerlink" title="3. Vue-CLI"></a>3. Vue-CLI</h3><ul>
+<h3 id="Vue-CLI"><a href="#Vue-CLI" class="headerlink" title="Vue-CLI"></a>Vue-CLI</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/">🛠️ Vue.js 开发的标准工具</a></li>
 </ul>
 <p>可以使用下列任一命令安装这个新的包：<br><code>npm install -g @vue/cli</code></p>
@@ -180,7 +180,7 @@
 <p><code>npm update -g @vue/cli</code></p>
 <p>如需卸载全局的 Vue CLI 包，请运行：</p>
 <p><code>npm uninstall vue-cli -g</code></p>
-<h3 id="4-VsCode（system版）"><a href="#4-VsCode（system版）" class="headerlink" title="4. VsCode（system版）"></a>4. VsCode（system版）</h3><ul>
+<h3 id="VsCode（system版）"><a href="#VsCode（system版）" class="headerlink" title="VsCode（system版）"></a>VsCode（system版）</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/#alt-downloads">VsCode</a></li>
 </ul>
  <img src="https://i.loli.net/2021/10/03/Kec8gkdtYlVSN4p.png" width="60%">
@@ -192,9 +192,9 @@
 <li>vscode-icons ——vscode ide 文件图标（可选）</li>
 <li>Bracket Pair Colorizer 2 ——花括号代码高亮（可选）</li>
 </ul>
-<h2 id="二、工程搭建"><a href="#二、工程搭建" class="headerlink" title="二、工程搭建"></a>二、工程搭建</h2><h3 id="1-环境检测"><a href="#1-环境检测" class="headerlink" title="1.环境检测"></a>1.环境检测</h3><p>再次运行命令<code>node --version</code>、<code>npm --version</code>、<code>vue --version</code> 检测环境是否安装完整:</p>
+<h2 id="工程搭建"><a href="#工程搭建" class="headerlink" title="工程搭建"></a>工程搭建</h2><h3 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h3><p>再次运行命令<code>node --version</code>、<code>npm --version</code>、<code>vue --version</code> 检测环境是否安装完整:</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">PS C:\WINDOWS\system32&gt; node --version</span><br><span class="line">v16<span class="number">.10</span><span class="number">.0</span></span><br><span class="line">PS C:\WINDOWS\system32&gt; npm --version</span><br><span class="line"><span class="number">7.24</span><span class="number">.1</span></span><br><span class="line">PS C:\WINDOWS\system32&gt; vue --version</span><br><span class="line">@vue/cli <span class="number">4.5</span><span class="number">.13</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-工程生成-mvpue快速上手"><a href="#2-工程生成-mvpue快速上手" class="headerlink" title="2.工程生成  mvpue快速上手"></a>2.工程生成  <a target="_blank" rel="noopener" href="http://mpvue.com/mpvue/quickstart.html">mvpue快速上手</a></h3><p>在vscode的终端中执行<code>vue init mpvue/mpvue-quickstart my-project</code>命令快速搭建工程:</p>
+<h3 id="工程生成-mvpue快速上手"><a href="#工程生成-mvpue快速上手" class="headerlink" title="工程生成  mvpue快速上手"></a>工程生成  <a target="_blank" rel="noopener" href="http://mpvue.com/mpvue/quickstart.html">mvpue快速上手</a></h3><p>在vscode的终端中执行<code>vue init mpvue/mpvue-quickstart my-project</code>命令快速搭建工程:</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Windows PowerShell</span><br><span class="line">版权所有（C） Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">安装最新的 PowerShell，了解新功能和改进！https:<span class="comment">//aka.ms/PSWindows</span></span><br><span class="line"></span><br><span class="line">PS E:\&gt; vue init mpvue/mpvue-quickstart my-project                                                      </span><br><span class="line">? Project name my-project</span><br><span class="line">? wxmp appid touristappid</span><br><span class="line">? Project description A Mpvue project</span><br><span class="line">? Author dushiyi2333 &lt;<span class="number">1061133261</span>@qq.com&gt;</span><br><span class="line">? Vue build runtime</span><br><span class="line">? Use Vuex? No</span><br><span class="line">? Use ESLint to lint your code? No</span><br><span class="line">? 小程序测试，敬请关注最新微信开发者工具的“测试报告”功能 </span><br><span class="line"> </span><br></pre></td></tr></table></figure>
 <p>执行以下命令运行工程：</p>
 <ul>
@@ -246,7 +246,7 @@
                               <button class="mdui-fab catalog" style="overflow:unset;">
                                   <i class="nexmoefont icon-i-catalog"></i>
                                   <div class="nexmoe-toc">
-                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">一、环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%EF%BC%88%E7%A8%B3%E5%AE%9A%E7%89%88%EF%BC%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 微信开发者工具（稳定版）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-node-js"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Vue-CLI"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. Vue-CLI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-VsCode%EF%BC%88system%E7%89%88%EF%BC%89"><span class="toc-number">1.1.4.</span> <span class="toc-text">4. VsCode（system版）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#vscode%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.4.0.1.</span> <span class="toc-text">vscode插件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA"><span class="toc-number">1.2.</span> <span class="toc-text">二、工程搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%8E%AF%E5%A2%83%E6%A3%80%E6%B5%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.环境检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B7%A5%E7%A8%8B%E7%94%9F%E6%88%90-mvpue%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.工程生成  mvpue快速上手</span></a></li></ol></li></ol></li></ol>
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%EF%BC%88%E7%A8%B3%E5%AE%9A%E7%89%88%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">微信开发者工具（稳定版）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node-js"><span class="toc-number">1.2.</span> <span class="toc-text">node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue-CLI"><span class="toc-number">1.3.</span> <span class="toc-text">Vue-CLI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VsCode%EF%BC%88system%E7%89%88%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">VsCode（system版）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#vscode%E6%8F%92%E4%BB%B6"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">vscode插件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">工程搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%A3%80%E6%B5%8B"><span class="toc-number">2.1.</span> <span class="toc-text">环境检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E7%A8%8B%E7%94%9F%E6%88%90-mvpue%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">2.2.</span> <span class="toc-text">工程生成  mvpue快速上手</span></a></li></ol></li></ol>
                                   </div>
                               </button>
                           
@@ -278,10 +278,10 @@
 
  
 
-<script async src="/js/app.js?v=1638258636048"></script>
+<script async src="/js/app.js?v=1638269890829"></script>
 
 
-	<script async src="/js/search.js?v=1638258636048"></script>
+	<script async src="/js/search.js?v=1638269890829"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
